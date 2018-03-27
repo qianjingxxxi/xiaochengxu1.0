@@ -1,0 +1,18 @@
+<!--pages/starts/starts.wxml-->
+<template name="startsTemplate">
+  <view class="stars-container">
+    <view class="stars">
+      <block wx:for="{{stars}}" wx:key="key" wx:for-item="i">
+        <image wx:if="{{i==1}}" src='/images/icon/star.png'></image>
+        <image wx:elif="{{i==2}}" src='/images/icon/half_star.png'></image>
+        <image wx:else src='/images/icon/none-star.png'></image>
+      </block>
+
+      <!-- <image src='/images/icon/star.png'></image>
+      <image src='/images/icon/star.png'></image>
+      <image src='/images/icon/star.png'></image>
+      <image src='/images/icon/star.png'></image> -->
+    </view>
+    <text src='/images/icon/star.png'>{{score}}</text>
+  </view>
+</template>

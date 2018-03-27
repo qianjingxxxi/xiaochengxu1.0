@@ -1,0 +1,9 @@
+<!--pages/welcome/welcome.wxml-->
+
+<view class='container'>
+  <image src='/images/1.jpeg'></image>
+  <text class='user-name'>Hello</text>
+  <view bindtap='onTap'>
+    <text>走一走，看一看</text>
+  </view>
+</view>
